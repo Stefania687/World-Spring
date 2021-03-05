@@ -1,4 +1,4 @@
-package it.objectmethod.worldSpring.controller;
+package it.objectmethod.world.controller;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -8,9 +8,9 @@ import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import it.objectmethod.worldSpring.dao.ICountryDao;
-import it.objectmethod.worldSpring.dao.impl.CountryDaoImpl;
-import it.objectmethod.worldSpring.domain.Country;
+import it.objectmethod.world.dao.ICountryDao;
+import it.objectmethod.world.dao.impl.CountryDaoImpl;
+import it.objectmethod.world.domain.Country;
 
 @Controller
 public class CountryController {

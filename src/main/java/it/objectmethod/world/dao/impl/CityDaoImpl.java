@@ -1,4 +1,4 @@
-package it.objectmethod.worldSpring.dao.impl;
+package it.objectmethod.world.dao.impl;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -10,8 +10,8 @@ import java.util.List;
 
 import org.springframework.stereotype.Service;
 
-import it.objectmethod.worldSpring.dao.ICityDao;
-import it.objectmethod.worldSpring.domain.City;
+import it.objectmethod.world.dao.ICityDao;
+import it.objectmethod.world.domain.City;
 
 @Service
 public class CityDaoImpl implements ICityDao {

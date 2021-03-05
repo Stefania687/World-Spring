@@ -1,8 +1,8 @@
-package it.objectmethod.worldSpring.dao;
+package it.objectmethod.world.dao;
 
 import java.util.List;
 
-import it.objectmethod.worldSpring.domain.City;
+import it.objectmethod.world.domain.City;
 
 public interface ICityDao {
 

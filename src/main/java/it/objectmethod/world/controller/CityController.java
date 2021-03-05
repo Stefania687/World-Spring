@@ -1,4 +1,4 @@
-package it.objectmethod.worldSpring.controller;
+package it.objectmethod.world.controller;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -8,9 +8,10 @@ import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import it.objectmethod.worldSpring.dao.ICityDao;
-import it.objectmethod.worldSpring.dao.impl.CityDaoImpl;
-import it.objectmethod.worldSpring.domain.City;
+import it.objectmethod.world.dao.ICityDao;
+import it.objectmethod.world.dao.impl.CityDaoImpl;
+import it.objectmethod.world.domain.City;
+import it.objectmethod.world.jasper.JasperService;
 
 @Controller
 public class CityController {
@@ -39,5 +40,20 @@ public class CityController {
 		map.addAttribute("cityList", list);
 		return "index-3";
 	}
+	@RequestMapping("/city-pdf")
+	public void getCityReport(@RequestParam("country") String countryCode) {
+		List<City> list = null;
+		ICityDao cityDao = new CityDaoImpl();
+		list = cityDao.getCityByCountryCode(countryCode);
+		JasperService jasperService = new JasperService();
+		try {
+			jasperService.getJasperPrint(list);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
+	
 
 }

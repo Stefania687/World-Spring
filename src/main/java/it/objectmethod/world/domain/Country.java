@@ -1,4 +1,4 @@
-package it.objectmethod.worldSpring.domain;
+package it.objectmethod.world.domain;
 
 public class Country {
 	private String codiceNazione;

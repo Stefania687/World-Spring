@@ -1,8 +1,8 @@
-package it.objectmethod.worldSpring.dao;
+package it.objectmethod.world.dao;
 
 import java.util.List;
 
-import it.objectmethod.worldSpring.domain.Country;
+import it.objectmethod.world.domain.Country;
 
 public interface ICountryDao {
 	public List<Country> getCountryByName(String countryName, String continent);

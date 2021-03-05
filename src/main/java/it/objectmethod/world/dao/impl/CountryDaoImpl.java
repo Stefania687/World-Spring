@@ -1,4 +1,4 @@
-package it.objectmethod.worldSpring.dao.impl;
+package it.objectmethod.world.dao.impl;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -8,8 +8,8 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-import it.objectmethod.worldSpring.dao.ICountryDao;
-import it.objectmethod.worldSpring.domain.Country;
+import it.objectmethod.world.dao.ICountryDao;
+import it.objectmethod.world.domain.Country;
 
 public class CountryDaoImpl implements ICountryDao {
 
